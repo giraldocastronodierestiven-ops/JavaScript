@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        let usuarioCorrecto = "admin";
+        let contrasenaCorrecta = "1234";
+        let usuario, contrasena;
+
+        do {
+            usuario = prompt('Ingrese su usuario:', '');
+            contrasena = prompt('Ingrese su contraseña:', '');
+
+            if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
+                document.write('Acceso concedido');
+                break; 
+            } else {
+                alert('Usuario o contraseña incorrectos. Intente nuevamente.');
+            }
+
+        } while (true); 
+    </script>
+
+</body>
+
+</html>
